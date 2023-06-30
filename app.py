@@ -1,10 +1,15 @@
-from flask import Flask
+from flask import Flask,render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "<h1> Hello </h1>"
+    return render_template('home.html')
+
+@app.route('/w3school')
+def w3school():
+    return render_template('w3school.html')
+
 if __name__ == '__main__':
 
     app.run(host="0.0.0.0",debug=True)
