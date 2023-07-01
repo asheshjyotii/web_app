@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style type="text/css">
         #title{
-            font-family: monospace;
+            font-family: sans-serif;
             font-weight: bold;
             
         }
@@ -23,21 +23,28 @@
 <body>
     {% include 'navbar.html' %}
 <div class="container-sm" id="whole_page">
-    <h1 id="title" class="text-center mt-2 mb-2">
+    <h1 id="title" class="text-center mt-2 mb-2 pt-3" style="font-family: sans-serif;">
         Jobsack
     </h1>
-    <img id= "banner" src = 'https://cdn.phenompeople.com/CareerConnectResources/HILTGLOBAL/images/WEBSITE-BANNER-01-1659728684358.jpg' class="img-fluid mt-2 mb-2" >
-    <h2 class="text-center fs-4">
+    <img id= "banner" src = 'https://cdn.phenompeople.com/CareerConnectResources/HILTGLOBAL/images/WEBSITE-BANNER-01-1659728684358.jpg' class="img-fluid mt-2 mb-2 pt-3" >
+    <h2 class="text-center fs-4 pt-4">
         About us
     </h2>
-    <p class="lead text-center">
-            llorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <h3 id="Openings" class="text-center">
+    <div class="row pt-3">
+        <div class="col-6">
+            <p class="lead text-center pt-3" style="font-weight:normal;">
+                    Hi there, this is a demo website for a job listing site. This website is made using HTML,CSS, and python...There are many elements in this page made using made using Bootstrap 5(actually mostly..) like the nav bar the footer and the layouts. This is currently 'work in progress' as of [Jul 01 ,2023] .This was initially deployed to render.com on [01 July ,2023] at 03:00 AM . The project is publicly available on Github>> github/asheshjyotii << .This is my first web development project which was made watching a tuitorial all thanks to @Jovian you can find them on youtube(its free!).
+            </p>
+        </div>
+        <div class="col-6">
+            
+            <div style="padding-top: 100;">
+                <img src="/static/employee.jpg" style="height: 300px">
+            </div>
+
+        </div>
+    </div>
+    <h3 id="Openings" class="text-center  pt-4" style="font-weight:600;">
         Openings
     </h3>
     <div>
